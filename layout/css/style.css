@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--box-shadow);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+.icons .iconify{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.icons .facebook,
+.icons .snapchat,
+.icons .medium{
+    color: black;
+}
+
+/* header style start*/
+
+
+/* header style end*/
+
+/* home style start */
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 9rem;
+    
+}
+
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 100%;
+}
+
+.home .home-slider .slide .content span{
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color:#fff;
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .content p{
+    color:#fff;
+    font-size: 2.2rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+    margin-top: 10%;
+}
+.home .home-slider .slide .content .btn{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #2D46B9;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+
+}
+
+.swiper-pagination-bullet-active{
+    background:var(--green);
+}
+/* home style end */
+
+/*learn  Algorthim Style start */
+.algorithms .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:1.5rem;
+}
+
+.algorithms .box-container .box{
+    padding:2.5rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.algorithms .box-container .box p{
+    font-size: 1.3rem;
+    color:var(--black);
+}
+
+.algorithms .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+.algorithms .box-container .box span{
+    color:var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+/*learn  Algorthim Style end */
+
+/*Quiz Style start */
+.quiz .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:1.5rem;
+}
+
+.quiz .box-container .box{
+    padding:2.5rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.quiz .box-container .box p{
+    font-size: 1.3rem;
+    color:var(--black);
+}
+
+.quiz .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+.quiz .box-container .box span{
+    color:var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.quiz .box-container .box .quiz-quitions {
+    display:none;
+}
+.quiz .box-container .box .quiz-quitions p {
+    font-size: 1.2rem;
+    color:var(--black);
+}
+.quiz .box-container .box .quiz-quitions input {
+    font-size: 1.2rem;
+    color:var(--black);
+    display:block;
+
+}
+/*quiz Style end */
+
+/* abute style start */
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{ 
+    width: 100%;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.about .row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background:#eee;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex:1 1 17rem;
+    padding:1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color:var(--green);
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color:var(--black);
+}
+/* abute style end */
+
+/* form style start */
+.form form{
+    max-width:90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#fff;
+    padding:1.5rem;
+    margin:0 auto;
+}
+
+.form form .inputBox{
+    display: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form form .inputBox .input{
+    width:49%;
+}
+
+.form form .inputBox .input span{
+    display:block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--green);
+}
+
+.form form .inputBox .input input,
+.form  form .inputBox .input textarea{
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+}
+
+.form form .inputBox .input input:focus,
+.form  form .inputBox .input textarea:focus{
+    border:.1rem solid var(--green);
+}
+
+.form form .btn{
+    margin-top: 0;
+  
+}
+.form form span.psw {
+    font-size: 1.5rem;
+
+  }
+/* form style end */
+
+
+
+
+
+/* style Implemntation start*/
+.tabcontent .implemntation form{
+    max-width:100rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#fff;
+    padding:1.5rem;
+    margin:0 auto;
+}
+.tabcontent .implemntation form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tabcontent .implemntation form .inputBox .input{
+    width:39%;
+}
+.tabcontent .implemntation form .inputBox .input span{
+   
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    display: block;
+   
+}
+.tabcontent .implemntation  form .inputBox .input input,
+.tabcontent .implemntation  form .inputBox .input textarea{
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+}
+.tabcontent .implemntation  form .inputBox .input input:focus
+.tabcontent .implemntation  form .inputBox .input textarea:focus{
+    border:.1rem solid var(--green);
+}
+.tabcontent .implemntation form .inputBox .input textarea{
+    height:20rem;
+    resize: none;
+}
+
+.tabcontent .implemntation form .btn{
+    margin-top: 0;
+    margin-left: 44%;
+   
+}
+
+
+
+ 
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgb(216, 192, 192);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 4s;
+    animation: fadeEffect 4s;
+
+
+  }
+  .tabcontent  p{
+    color:var(--green);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+    margin-bottom: 3%;
+  }
+  .tabcontent  h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+  }
+  .tabcontent .quitaion{
+    display: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+  }
+  .tabcontent .quitaion p{
+    color:#14279B;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+  }
+  .tabcontent .quitaion h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+  }
+  
+  /* Style the close button */
+  .topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+.topright:hover {color: red;}
+
+/* Style the radio button start */
+/* The container */
+.tabcontent .quitaion .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .tabcontent  .quitaion .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .tabcontent .quitaion .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .tabcontent .quitaion .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .tabcontent  .quitaion .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .tabcontent .quitaion .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .tabcontent .quitaion .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .tabcontent .quitaion .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+/* Style the radio button end */
+
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* media queries  responsive desined */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+  
+
+  
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .algorithms .box-container .box img{
+        height:auto;
+        width: 100%;
+    }
+
+    .form form .inputBox .input{
+        width:100%;
+    }
+
+}
